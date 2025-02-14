@@ -1,0 +1,122 @@
+
+/*CUSTOM FONTS IMPORT*/
+@font-face {
+    font-family: PIXELATED_main_elegance;
+    src: url(FONTS/pixelated/PixelatedEleganceRegular-drlg6.ttf);
+  }
+  
+  @font-face {
+    font-family: PIXELATED_main_intv;
+    src: url(../Assets/FONTS/pixelated/PixelIntv-OPxd.ttf);
+  }
+  
+  @font-face {
+    font-family: PIXELATED_main_emulator;
+    src: url(FONTS/pixelated/PixelEmulator-xq08.ttf);
+  }
+  
+  @font-face {
+    font-family: ROUNDED_main_karolyn;
+    src: url(FONTS/rounded/KarolyroundedRegularDemo-q2Xjr.otf);
+  }
+  /*--------------------------*/
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /* font-family: Arial, sans-serif; */
+  }
+
+  @keyframes myAnim {
+	0% {
+		transform: scale(0.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+
+
+  body {
+    background: url(14.png);
+    background-size: cover;
+    min-height: 100vh; /* Change height to min-height */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+
+  .CONTAINER{
+    width: 25rem;
+    height: 25rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+  }
+
+  .CONTAINER #card{
+
+    height:30rem;
+    transition: transform 0.4s ;
+    
+  }
+
+  .CONTAINER #card:hover{
+
+   transform: translateY(-35px);
+
+  }
+
+
+   #button{
+    width: 20rem;
+    height: 12rem;
+    transition: transform 0.4s  ;
+  }
+
+  #button:hover{
+    transform: scale(1.1);
+    filter:brightness(1.1);
+   
+    
+  }
+  
+  #button:active{
+    filter: opacity(0.8);
+    
+
+  }
+
+  .FORLETTER {
+    
+    position: absolute;  /* Position it relative to the viewport */
+    top: 0;  /* Stick it to the top */
+    left: 50%;  /* Center horizontally */
+    transform: translateX(-50%);  /* Adjust for exact centering */
+    width: 100%;  /* Full width or adjust as needed */
+    text-align: center; /* Center text inside */
+    padding: 5px 0;  /* Add padding for better spacing */
+    background-color: rgba(255, 157, 239, 0.466);
+    
+}
+
+  #LETTER{
+    font-size: 3.5rem;
+    -webkit-text-stroke: rgb(255, 0, 179) 2px;
+    font-family: PIXELATED_main_emulator;
+    animation: myAnim 6s ease 0s 1 normal forwards;
+  }
+
+ 

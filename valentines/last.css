@@ -1,0 +1,232 @@
+
+/*CUSTOM FONTS IMPORT*/
+@font-face {
+    font-family: PIXELATED_main_elegance;
+    src: url(FONTS/pixelated/PixelatedEleganceRegular-drlg6.ttf);
+  }
+  
+  @font-face {
+    font-family: PIXELATED_main_intv;
+    src: url(../Assets/FONTS/pixelated/PixelIntv-OPxd.ttf);
+  }
+  
+  @font-face {
+    font-family: PIXELATED_main_emulator;
+    src: url(FONTS/pixelated/PixelEmulator-xq08.ttf);
+  }
+  
+  @font-face {
+    font-family: ROUNDED_main_karolyn;
+    src: url(FONTS/rounded/KarolyroundedRegularDemo-q2Xjr.otf);
+  }
+  /*--------------------------*/
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /* font-family: Arial, sans-serif; */
+  }
+
+  @keyframes myAnim {
+	0% {
+		transform: scale(0.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+
+
+  body {
+    background: url('BACKGROUND.png');
+    background-size: cover;
+    min-height: 100vh; /* Change height to min-height */
+    
+  }
+
+
+
+
+/*CUSTOM FONTS IMPORT*/
+@font-face {
+    font-family: PIXELATED_main_elegance;
+    src: url(FONTS/pixelated/PixelatedEleganceRegular-drlg6.ttf);
+  }
+  
+  @font-face {
+    font-family: PIXELATED_main_intv;
+    src: url(../Assets/FONTS/pixelated/PixelIntv-OPxd.ttf);
+  }
+  
+  @font-face {
+    font-family: PIXELATED_main_emulator;
+    src: url(FONTS/pixelated/PixelEmulator-xq08.ttf);
+  }
+  
+  @font-face {
+    font-family: ROUNDED_main_karolyn;
+    src: url(FONTS/rounded/KarolyroundedRegularDemo-q2Xjr.otf);
+  }
+  /*--------------------------*/
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /* font-family: Arial, sans-serif; */
+  }
+
+  @keyframes myAnim {
+	0% {
+		transform: scale(0.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+
+
+  body {
+    background-color: #F8C8DC;
+    background-size: cover;
+    min-height: 100vh; /* Change height to min-height */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+
+
+  .FORLETTER {
+    
+    position: absolute;  /* Position it relative to the viewport */
+    top: 0;  /* Stick it to the top */
+    left: 50%;  /* Center horizontally */
+    transform: translateX(-50%);  /* Adjust for exact centering */
+    width: 100%;  /* Full width or adjust as needed */
+    text-align: center; /* Center text inside */
+    padding: 5px 0;  /* Add padding for better spacing */
+    background-color: rgba(255, 157, 239, 0.466);
+    
+}
+
+  #LETTER{
+    font-size: 3.5rem;
+    -webkit-text-stroke: rgb(255, 0, 179) 2px;
+    font-family: PIXELATED_main_emulator;
+    animation: myAnim 3s ease 0s 1 normal forwards;
+  }
+
+.MESSAGE{
+   
+    background-color: inherit;
+    background: none;
+ 
+    
+}
+
+.MESSAGE img{
+
+    width: 40rem;
+    height: 20rem;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: transform 0.4s ;
+}
+
+.MESSAGE img:hover{
+
+    content: url(11.png);
+  
+}
+
+ 
+
+
+.form-popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Position relative to the viewport */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center it both horizontally and vertically */
+    width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+    border: 7px  black solid;
+    z-index: 1000; /* Ensure it's above other content */
+    }
+    
+    /* Add styles to the form container */
+    .BUILD-POPOUT-WRAPPER {
+      max-width: 600px;
+      padding: 10px;
+      background-color:#FFFBDE;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    
+    .POPUP-BUTTON{
+      width: 100%; /* Use full width of parent */
+      max-width: 250px;
+    }
+    
+    .POPUP-VISUAL{
+  
+      width: 100%;
+      max-width: 400px;
+      border: 5px black solid;
+      border-radius: 10px;
+    }
+  
+    .LAYER3{
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 1rem;
+      
+    }
+    .LAYER3 h3{
+      text-align: justify;
+      font-family: PIXELATED_main_emulator;
+    }
+  
+  .CLOSE-FORM-BUTTON{
+      background-color: inherit;
+      border: none;
+      appearance: none;
+  
+  }
+  
+  .CLOSE-FORM-BUTTON img{
+      width: 100%;
+      max-width: 300px;
+      height: 100%;
+      max-height: 100px;
+      transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .CLOSE-FORM-BUTTON img:hover{
+      transform: scale(1.1);
+      filter: brightness(1.3);
+  }
+  
+  .CLOSE-FORM-BUTTON:active{
+      opacity: 0.8;
+  }
